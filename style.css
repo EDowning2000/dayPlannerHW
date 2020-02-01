@@ -21,3 +21,12 @@
   border-radius: 5px;
   background-color: blue;
 }
+.current{
+  background-color: #13BAF0
+}
+.future{
+  background-color: #A0F013;
+}
+.past{
+  background-color: #F01313;
+}
