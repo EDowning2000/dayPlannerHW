@@ -1,32 +1,41 @@
-.lock{
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: #BFCDD1;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+/* .lock{
   display: inline;
   height: 40px;
-}
+} */
+
 .time{
-  display: inline;
+  height: 30px;
   text-align: center;
-  border-top: 2px;
-  border-bottom: 2px;
-  border-right: 2px;
-  border-style: dashed;
-}
-.events{
-  width: 80%;
-  align-content: center;
-}
-.timerContainer{
-  display: inline;
-  height: 47px;
-  width: 20px;
-  border-radius: 5px;
-  background-color: blue;
+  padding-top:10px;
+  /* border-style: dashed; */
+
 }
 .current{
-  background-color: #13BAF0
-}
-.future{
-  background-color: #A0F013;
+  background-color: #d3d3d3;
+  color: white;
 }
 .past{
-  background-color: #F01313;
+  background-color: #77dd77;
+  color: white;
+}
+.future{
+  background-color: #ff6961;
+  color: white;
+
 }

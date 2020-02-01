@@ -16,29 +16,34 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <!--This is the heading of the page-->
-      <h1>Work Day Scheduler</h1>
-      <h4>A planner to help map out your day!</h4>
-      <h6 id="displayedTime"></h6>
-      <hr />
-      <!--This is the Horizontal Rule that will separate the date area from the actual input times-->
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="displayedTime" class="lead"></p>
     </header>
     <!--The sections with the times, input sections, and locks-->
     <!-- TODO: use textarea dumbass -->
 
     <div class="row nine" value="9">
       <div class="col-sm-1"></div>
-      <p class="col-sm-1 time">9am</p>
-      <input
+      <div class="col-sm-1 time">9am</div>
+      <!-- <input
         class="form-control form-control-lg col-sm-6 event9"
         type="text"
-        placeholder="Tasks This Hour"
-      />
+        placeholder="Tasks This Hour" -->
+      <textarea class="form-control col-sm-6 event9" id="exampleFormControlTextarea1" rows="2"></textarea>
       <div class="timerContainer col-sm-1">
+
+
         <button class="lock9"></button>
       </div>
     </div>
@@ -47,11 +52,12 @@
     <div class="row ten" value="10">
     <div class="col-sm-1"></div>
     <p class="col-sm-1 time">10am</p>
-    <input
+    <!-- <input
       class="form-control form-control-lg col-sm-6 event10"
       type="text"
-      placeholder="Tasks This Hour"
-    />
+      placeholder="Tasks This Hour" -->
+      <textarea class="form-control col-sm-6 event10" id="exampleFormControlTextarea1" rows="2"></textarea>
+
     <div class="timerContainer col-sm-1">
       <button class="lock10"></button>
     </div>
@@ -61,11 +67,13 @@
   <div class="row eleven" value="11">
     <div class="col-sm-1"></div>
     <p class="col-sm-1 time">11am</p>
-    <input
+    <!-- <input
       class="form-control form-control-lg col-sm-6 event11"
       type="text"
       placeholder="Tasks This Hour"
-    />
+    /> -->
+    <textarea class="form-control col-sm-6 event11" id="exampleFormControlTextarea1" rows="2"></textarea>
+
     <div class="timerContainer col-sm-1">
       <button class="lock11"></button>
     </div>
@@ -75,11 +83,12 @@
   <div class="row twelve" value="12">
     <div class="col-sm-1"></div>
     <p class="col-sm-1 time">12am</p>
-    <input
+    <!-- <input
       class="form-control form-control-lg col-sm-6 event12"
       type="text"
       placeholder="Tasks This Hour"
-    />
+    /> -->
+    <textarea class="form-control col-sm-6 event12" id="exampleFormControlTextarea1" rows="2"></textarea>
     <div class="timerContainer col-sm-1">
       <button class="lock12"></button>
     </div>
@@ -89,11 +98,12 @@
   <div class="row thirteen" value="13">
     <div class="col-sm-1"></div>
     <p class="col-sm-1 time">1pm</p>
-    <input
+    <!-- <input
       class="form-control form-control-lg col-sm-6 event13"
       type="text"
       placeholder="Tasks This Hour"
-    />
+    /> -->
+    <textarea class="form-control col-sm-6 event13" id="exampleFormControlTextarea1" rows="2"></textarea>
     <div class="timerContainer col-sm-1">
       <button class="lock13"></button>
     </div>
@@ -103,11 +113,12 @@
   <div class="row fourteen" value="14">
     <div class="col-sm-1"></div>
     <p class="col-sm-1 time">2pm</p>
-    <input
+    <!-- <input
       class="form-control form-control-lg col-sm-6 event14"
       type="text"
       placeholder="Tasks This Hour"
-    />
+    /> -->
+    <textarea class="form-control col-sm-6 event14" id="exampleFormControlTextarea1" rows="2"></textarea>
     <div class="timerContainer col-sm-1">
       <button class="lock14"></button>
     </div>
@@ -117,11 +128,12 @@
   <div class="row fifteen" value="15">
     <div class="col-sm-1"></div>
     <p class="col-sm-1 time">3pm</p>
-    <input
+    <!-- <input
       class="form-control form-control-lg col-sm-6 event15"
       type="text"
       placeholder="Tasks This Hour"
-    />
+    /> -->
+    <textarea class="form-control col-sm-6 event15" id="exampleFormControlTextarea1" rows="2"></textarea>
     <div class="timerContainer col-sm-1">
       <button class="lock15"></button>
     </div>
@@ -131,11 +143,12 @@
   <div class="row sixteen" value="16">
     <div class="col-sm-1"></div>
     <p class="col-sm-1 time">4pm</p>
-    <input
+    <!-- <input
       class="form-control form-control-lg col-sm-6 event16"
       type="text"
       placeholder="Tasks This Hour"
-    />
+    /> -->
+    <textarea class="form-control col-sm-6 event16" id="exampleFormControlTextarea1" rows="2"></textarea>
     <div class="timerContainer col-sm-1">
       <button class="lock16"></button>
     </div>
@@ -146,11 +159,12 @@
   <div class="row seventeen" value="17">
     <div class="col-sm-1"></div>
     <p class="col-sm-1 time">5pm</p>
-    <input
+    <!-- <input
       class="form-control form-control-lg col-sm-6 event17"
       type="text"
       placeholder="Tasks This Hour"
-    />
+    /> -->
+    <textarea class="form-control col-sm-6 event17" id="exampleFormControlTextarea1" rows="2"></textarea>
     <div class="timerContainer col-sm-1">
       <button class="lock17"></button>
     </div>

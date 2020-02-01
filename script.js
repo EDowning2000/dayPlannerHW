@@ -40,103 +40,103 @@ var seventeenTime=parseInt(seventeen.getAttribute("value"))
 //hour values that will be compared
 
 if(nineTime === moment().hour()){
-  $(".nine").addClass("current")
+  $(".event9").addClass("current")
 }
 else if(nineTime > moment().hour()){
-  $(".nine").addClass("past")
+  $(".event9").addClass("past")
 
 }
 else if (nineTime < moment().hour()){
-  $(".nine").addClass("future")
+  $(".event9").addClass("future")
 } //checks for 9 am -----------------------
 
 if(tenTime === moment().hour()){
-  $(".ten").addClass("current")
+  $(".event10").addClass("current")
 }
 else if(tenTime > moment().hour()){
-  $(".ten").addClass("past")
+  $(".event10").addClass("past")
 
 }
 else if (tenTime < moment().hour()){
-  $(".ten").addClass("future")
+  $(".event10").addClass("future")
 } //checks for 10 am -------------------------
 
 if(elevenTime === moment().hour()){
-  $(".eleven").addClass("current")
+  $(".event11").addClass("current")
 }
 else if(elevenTime > moment().hour()){
-  $(".eleven").addClass("past")
+  $(".event11").addClass("past")
 
 }
 else if (elevenTime < moment().hour()){
-  $(".eleven").addClass("future")
+  $(".event11").addClass("future")
 } //checks for 11 am ---------------------------
 
 if(twelveTime === moment().hour()){
-  $(".twelve").addClass("current")
+  $(".event12").addClass("current")
 }
 else if(twelveTime > moment().hour()){
-  $(".twelve").addClass("past")
+  $(".event12").addClass("past")
 
 }
 else if (twelveTime < moment().hour()){
-  $(".twelve").addClass("future")
+  $(".event12").addClass("future")
 } //checks for 12 pm ---------------------------
 
 if(thirteenTime === moment().hour()){
-  $(".thirteen").addClass("current")
+  $(".event13").addClass("current")
 }
 else if(thirteenTime > moment().hour()){
-  $(".thirteen").addClass("past")
+  $(".event13").addClass("past")
 
 }
 else if (thirteenTime < moment().hour()){
-  $(".thirteen").addClass("future")
+  $(".event13").addClass("future")
 }//checks for 13 --------------------------------
 
 
 if(fourteenTime === moment().hour()){
-  $(".fourteen").addClass("current")
+  $(".event14").addClass("current")
 }
 else if(fourteenTime > moment().hour()){
-  $(".fourteen").addClass("past")
+  $(".event14").addClass("past")
 
 }
 else if (fourteenTime < moment().hour()){
-  $(".fourteen").addClass("future")
+  $(".event14").addClass("future")
 }//fourteen checks ----------------------------
 
 if(fifteenTime === moment().hour()){
-  $(".fifteen").addClass("current")
+  $(".event15").addClass("current")
 }
 else if(fifteenTime > moment().hour()){
-  $(".fifteen").addClass("past")
+  $(".event15").addClass("past")
 
 }
 else if (fifteenTime < moment().hour()){
-  $(".fifteen").addClass("future")
+  $(".event15").addClass("future")
 }// fifteen checks -----------------------------
 
 if(sixteenTime === moment().hour()){
-  $(".sixteen").addClass("current")
+  $(".event16").addClass("current")
 }
 else if(sixteenTime > moment().hour()){
-  $(".sixteen").addClass("past")
+  $(".event16").addClass("past")
 
 }
 else if (sixteenTime < moment().hour()){
-  $(".sixteen").addClass("future")
+  $(".event16").addClass("future")
 }//sixteen checks-------------------------------
 
 if(seventeenTime === moment().hour()){
-  $(".seventeen").addClass("current")
+  $(".event17").addClass("current")
 }
 else if(seventeenTime > moment().hour()){
-  $(".seventeen").addClass("past")
+  $(".event17").addClass("past")
 
 }
 else if (seventeenTime < moment().hour()){
-  $(".seventeen").addClass("future")
+  $(".event17").addClass("future")
 } //seventeen checks --------------------------
 
 
@@ -147,6 +147,8 @@ else if (seventeenTime < moment().hour()){
   function changeTime(){
     document.getElementById("displayedTime").innerText= moment().format('MMMM Do YYYY, h:mm:ss a');
   } //function that displays the time-----------------
+
+
 
   lock9.addEventListener('click', function(){
     console.log(event9.value)
@@ -199,5 +201,11 @@ else if (seventeenTime < moment().hour()){
   lock17.addEventListener('click', function(){
     console.log(event17.value)
     var stored17 = event17.value
-    localStorage.setItem("hour17Event", stored17)
+    localStorage.setItem("hour17Event", stored17) 
   })//9th event listner-------------------------------
+
+  if(moment().hour()===24){
+    localStorage.clear()
+  } //this clears the local storage for the next days tasks
+
+  
