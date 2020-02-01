@@ -1,5 +1,3 @@
-console.log(moment())
-
 // function displayTime(){
 //   var date = new Date();
 //   var hour = date.getHours();
@@ -18,18 +16,39 @@ console.log(moment())
 //   if(sec<10){
 //     sec = "0" + sec
 //   }
-var lockBtn = document.querySelector("lock")
+var lockBtn = document.querySelector(".lock")
+var eventOne= document.querySelector(".events")
+var nine = document.querySelector(".nine")
 
-  var updatedTime = moment().format('MMMM Do YYYY, h:mm:ss a');
+// console.log(moment().hour())
+// console.log(nine.getAttribute("value"));
+var nineTime = parseInt(nine.getAttribute("value"))
+// console.log(nineTime);
+
+if(nineTime === moment().hour()){
+  console.log("9am")
+  $(".nine").css("background-color", "grey")
+}
+else if(nineTime > moment().hour()){
+
+}
+else if (nineTime<moment().hour()){
+  
+}
+
+
 
   // document.getElementById("displayedTime").innerText= updatedTime;
 
   var timer = setInterval(changeTime, 1000);
 
   function changeTime(){
-    document.getElementById("displayedTime").innerText= updatedTime;
+    document.getElementById("displayedTime").innerText= moment().format('MMMM Do YYYY, h:mm:ss a');
   }
 
-  
-
-   
+  lockBtn.addEventListener('click', function(){
+    console.log(eventOne.value)
+    var events = eventOne.value
+    localStorage.setItem("currentHourEvent", events)
+    
+  })
